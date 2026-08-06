@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-    "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview",
-    "start": "node server.js"
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "vite preview",
+  "start": "node server.js",
+  "postinstall": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
